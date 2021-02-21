@@ -19,6 +19,7 @@ import java.nio.charset.StandardCharsets
 
 buildscript {
   repositories {
+    mavenLocal()
     mavenCentral()
     jcenter()
     maven {
@@ -52,6 +53,7 @@ spotless {
 allprojects {
 
   repositories {
+    mavenLocal()
     mavenCentral()
   }
   

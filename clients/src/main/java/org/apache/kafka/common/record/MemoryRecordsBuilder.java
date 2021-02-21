@@ -408,8 +408,8 @@ public class MemoryRecordsBuilder implements AutoCloseable {
             if (timestamp < 0 && timestamp != RecordBatch.NO_TIMESTAMP)
                 throw new IllegalArgumentException("Invalid negative timestamp " + timestamp);
 
-            if (magic < RecordBatch.MAGIC_VALUE_V2 && headers != null && headers.length > 0)
-                throw new IllegalArgumentException("Magic v" + magic + " does not support record headers");
+            // if (magic < RecordBatch.MAGIC_VALUE_V2 && headers != null && headers.length > 0)
+            //     throw new IllegalArgumentException("Magic v" + magic + " does not support record headers");
 
             if (firstTimestamp == null)
                 firstTimestamp = timestamp;
